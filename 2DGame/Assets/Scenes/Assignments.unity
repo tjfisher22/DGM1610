@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 71185028}
   - component: {fileID: 71185027}
   - component: {fileID: 71185026}
+  - component: {fileID: 71185029}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -190,6 +191,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &71185029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 71185025}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5126b343dda599a469c5e30f5003d744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaterBottle: 90
 --- !u!1 &1711034127
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1711034129}
   - component: {fileID: 1711034128}
+  - component: {fileID: 1711034130}
   m_Layer: 0
   m_Name: FirstSprite
   m_TagString: Untagged
@@ -265,3 +279,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1711034130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1711034127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5126b343dda599a469c5e30f5003d744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaterBottle: 90
