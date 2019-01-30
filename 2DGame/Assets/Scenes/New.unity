@@ -234,8 +234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aef1e4e1419f5e04eb35fb6d7067181d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
-  speed: 0
+  number: 20
+  speed: 20
   name: 
 --- !u!4 &1819271213
 Transform:
@@ -307,3 +307,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fe2b34e3ddfc3e438dd59e68b8ad3ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentWeather: sunny
