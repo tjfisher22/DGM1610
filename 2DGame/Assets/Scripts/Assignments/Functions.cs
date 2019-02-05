@@ -32,6 +32,10 @@ public class Functions : MonoBehaviour {
 		{
 			print("Even crazier space dust");
 		}
+		else if (weatherState=="ashy")
+		{
+			print("Mount St. Helens is about to blow up");
+		}
 		else{
 
 			print("The current weather is "+weatherState);
