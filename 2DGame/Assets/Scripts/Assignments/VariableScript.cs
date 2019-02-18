@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Variables : MonoBehaviour {
+//public class Variables : MonoBehaviour {
 //is the comment part of the assignment?
 /* I'll make two comments
 just in case it is*/
@@ -24,4 +24,4 @@ just in case it is*/
 	// 	transform.position = new Vector3(speed,0,0);
 		
 	// }
-}
+//}
