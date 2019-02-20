@@ -7,23 +7,36 @@ using UnityEngine.SceneManagement;
 public class CharControl : MonoBehaviour {
 
 	public float jumpHeight;
-	bool doubleJump = false;
+	bool hasDoubleJump = false;
 	bool grounded;
+	int pad;
 
 	// Use this for initialization
 	void Start () {
 		//PowerUpDisplay("None");
+		pad = 3;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKey(KeyCode.Space)&&grounded){
+
+		if(Input.GetKeyDown(KeyCode.Space)){
+			if(grounded){
 				Jump();
+			}
+			else{
+				if(hasDoubleJump){
+					hasDoubleJump = false;
+					Debug.Log("No Double");
+					GameControl.instance.PowerUpDisplay("None");
+					Jump();
+				}
+				else{Debug.Log("OffGroundJumpTry");}
+			} 
 		}
-		else if(Input.GetKey(KeyCode.Space)&&!grounded&&doubleJump){
-			doubleJump = false;
-			Debug.Log("No Double");
-		}
+		// if(Input.GetKey(KeyCode.Space)&&!grounded&&hasDoubleJump){
+			
+		// }
 		GameControl.instance.PlayerScore();
 		
 		// if(speed<200f){
@@ -50,9 +63,10 @@ public class CharControl : MonoBehaviour {
      	}
 
  	}
+	 //Should probably split power ups into their own script
 	 void OnTriggerEnter2D(Collider2D other){
 		 	if (other.gameObject.name == "PowerUp"){
-         	doubleJump = true;
+         	hasDoubleJump = true;
 			other.gameObject.SetActive(false);
 			//Debug.Log("PowerUp");
 			GameControl.instance.PowerUpDisplay("Double Jump");
