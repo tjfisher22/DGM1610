@@ -7,8 +7,8 @@ public class ScrollingObject : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D>();
-		rb2d.velocity = new Vector2(CharControl.instance.scrollSpeed,0);
-		Debug.Log(CharControl.instance.scrollSpeed);
+		rb2d.velocity = new Vector2(GameControl.instance.scrollSpeed,0);
+		Debug.Log(GameControl.instance.scrollSpeed);
 	}
 	
 	// Update is called once per frame
