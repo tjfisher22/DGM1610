@@ -35,13 +35,13 @@ public class GameControl : MonoBehaviour {
 	}
 
 	public void PowerUpDisplay(string power){
-		PowerUp.text = "Power Up: "+power+"!";
+		PowerUp.text = "Power Up: "+power+"!".ToString();
 
 	}
 	public void PlayerScore(){
         score++;
-        ScoreText.text = score.ToString();
-		Debug.Log(score);
+        ScoreText.text = "Score: " + score.ToString();
+		//Debug.Log(score);
     }
 
 }

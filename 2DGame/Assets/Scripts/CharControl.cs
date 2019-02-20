@@ -6,29 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class CharControl : MonoBehaviour {
 
-	// public static CharControl instance;
 	public float jumpHeight;
-	// public float scrollSpeed = -5f;
 	bool doubleJump = false;
 	bool grounded;
-	// public Text ScoreText;
-	// public Text PowerUp;
-	// public int score = 0;
-	// public int health = 100;
 
-
-
-    // void Awake()
-    // {
-    //     //If we don't currently have a game control...
-    //     if (instance == null)
-    //         //...set this one to be it...
-    //         instance = this;
-    //     //...otherwise...
-    //     else if(instance != this)
-    //         //...destroy this one because it is a duplicate.
-    //         Destroy (gameObject);
-    // }
 	// Use this for initialization
 	void Start () {
 		//PowerUpDisplay("None");
@@ -44,7 +25,6 @@ public class CharControl : MonoBehaviour {
 			Debug.Log("No Double");
 		}
 		GameControl.instance.PlayerScore();
-		//score++;
 		
 		// if(speed<200f){
 		//  speed+=10f;
@@ -74,8 +54,8 @@ public class CharControl : MonoBehaviour {
 		 	if (other.gameObject.name == "PowerUp"){
          	doubleJump = true;
 			other.gameObject.SetActive(false);
-			Debug.Log("PowerUp");
-			// PowerUpDisplay("Double Jump");
+			//Debug.Log("PowerUp");
+			GameControl.instance.PowerUpDisplay("Double Jump");
      	}
 	 }
 
