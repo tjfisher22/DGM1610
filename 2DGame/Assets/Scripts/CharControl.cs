@@ -9,12 +9,11 @@ public class CharControl : MonoBehaviour {
 	public float jumpHeight;
 	bool hasDoubleJump = false;
 	bool grounded;
-	int pad;
+
 
 	// Use this for initialization
 	void Start () {
 		//PowerUpDisplay("None");
-		pad = 3;
 	}
 	
 	// Update is called once per frame
@@ -27,11 +26,11 @@ public class CharControl : MonoBehaviour {
 			else{
 				if(hasDoubleJump){
 					hasDoubleJump = false;
-					Debug.Log("No Double");
+					//Debug.Log("No Double");
 					GameControl.instance.PowerUpDisplay("None");
 					Jump();
 				}
-				else{Debug.Log("OffGroundJumpTry");}
+				//else{Debug.Log("OffGroundJumpTry");}
 			} 
 		}
 		// if(Input.GetKey(KeyCode.Space)&&!grounded&&hasDoubleJump){

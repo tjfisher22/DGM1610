@@ -11,6 +11,7 @@ public class GameControl : MonoBehaviour {
 	public Text PowerUp;
 	public int score = 0;
 	public int health = 100;
+	public GameObject doubleJumpPower;
 	
     void Awake()
     {
@@ -26,7 +27,7 @@ public class GameControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		SpawnPowerUp();
 	}
 	
 	// Update is called once per frame
@@ -43,5 +44,9 @@ public class GameControl : MonoBehaviour {
         ScoreText.text = "Score: " + score.ToString();
 		//Debug.Log(score);
     }
+	public void SpawnPowerUp(){
+		//Instantiate(doubleJumpPower,new Vector3(10,-1,-5));
+
+	}
 
 }
