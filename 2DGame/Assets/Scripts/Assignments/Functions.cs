@@ -40,5 +40,9 @@ public class Functions : MonoBehaviour {
 
 
 	// }
+	// int Sum(int a, int b){
+	// 	return a+b;
+
+	// }
 
 }
