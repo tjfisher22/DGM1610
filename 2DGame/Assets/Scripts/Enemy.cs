@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+[CreateAssetMenu(fileName = "New Enemy", menuName = "Enemy")]
+public class Enemy : ScriptableObject {
+
+	public int health;
+	public int strength;
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	//public float speed;
+
+	public Sprite enemySprite;
+
+	public new string name;
 }
