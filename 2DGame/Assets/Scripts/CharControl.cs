@@ -36,8 +36,14 @@ public class CharControl : MonoBehaviour {
 		}
 		//debuging health control
 		if(Input.GetKeyDown(KeyCode.P)){
+			if(player.health > 0){
 			player.health -= 10;
-			print(player.health);
+			}
+		}
+		if(Input.GetKeyDown(KeyCode.O)){
+			if(player.health < 100){
+			player.health += 10;
+			}
 		}
 		// if(Input.GetKey(KeyCode.Space)&&!grounded&&hasDoubleJump){
 			
