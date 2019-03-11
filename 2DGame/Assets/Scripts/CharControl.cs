@@ -10,10 +10,11 @@ public class CharControl : MonoBehaviour {
 	bool hasDoubleJump = false;
 	bool grounded;
 
-
+	public Player player;
 	// Use this for initialization
 	void Start () {
 		//PowerUpDisplay("None");
+		jumpHeight = player.jumpHeight;
 	}
 	
 	// Update is called once per frame
@@ -32,6 +33,11 @@ public class CharControl : MonoBehaviour {
 				}
 				//else{Debug.Log("OffGroundJumpTry");}
 			} 
+		}
+		//debuging health control
+		if(Input.GetKeyDown(KeyCode.P)){
+			player.health -= 10;
+			print(player.health);
 		}
 		// if(Input.GetKey(KeyCode.Space)&&!grounded&&hasDoubleJump){
 			

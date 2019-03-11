@@ -10,8 +10,10 @@ public class GameControl : MonoBehaviour {
 	public Text ScoreText;
 	public Text PowerUp;
 	public int score = 0;
-	public int health = 100;
+	// public int health = 100;
 	public GameObject doubleJumpPower;
+
+	public Player player;
 	
     void Awake()
     {
@@ -28,6 +30,7 @@ public class GameControl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		SpawnPowerUp();
+		scrollSpeed = player.speed;
 	}
 	
 	// Update is called once per frame

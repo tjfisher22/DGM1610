@@ -2,15 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 //Not used in slopes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//You should probably just delete this
 public class PlayerControl : MonoBehaviour {
 
 	public float moveSpeed;
 	public float jumpHeight;
 	bool grounded = true;
 
+
+
 	// Use this for initialization
 	void Start () {
-		
+				
 	}
 	
 	// Update is called once per frame
@@ -28,5 +46,7 @@ public class PlayerControl : MonoBehaviour {
 		// if(GetComponent<Rigidbody2D>().){
 
 		// }
+		//debuging for health loss
+
 	}
 }
