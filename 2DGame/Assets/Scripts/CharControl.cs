@@ -10,6 +10,7 @@ public class CharControl : MonoBehaviour {
 	bool hasDoubleJump = false;
 	bool grounded;
 
+
 	public Player player;
 	// Use this for initialization
 	void Start () {
