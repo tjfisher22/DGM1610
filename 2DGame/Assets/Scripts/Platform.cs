@@ -10,6 +10,12 @@ public class Platform : ScriptableObject {
 	public float ySpeed;
 	public float xDist;
 	public float yDist;
+	public bool up;
+	public bool left;
+	// public float xStart;
+	// public float yStart;
+
+	public Vector2 speed;
 
 	public string name;
 
