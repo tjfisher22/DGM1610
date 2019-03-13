@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Name: Plat (1)
   m_EditorClassIdentifier: 
   xSpeed: 1
-  ySpeed: 1
+  ySpeed: 0
   xDist: 2
   yDist: 2
+  speed: {x: 1, y: 0}
   name: Plat (1)
   charSprite: {fileID: 0}
