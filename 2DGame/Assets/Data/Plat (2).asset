@@ -11,12 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffea77e96be8d884d8baef9b7138ba51, type: 3}
   m_Name: Plat (2)
   m_EditorClassIdentifier: 
-  xSpeed: 0
-  ySpeed: 1
-  xDist: 0
-  yDist: 1
   up: 0
   left: 0
   speed: {x: 0, y: 1}
+  distance: {x: 0, y: 1}
   name: 
   charSprite: {fileID: 0}
