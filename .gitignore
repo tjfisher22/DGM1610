@@ -70,6 +70,19 @@ sysinfo.txt
 *.DS_Store
 
 #In Progress Art Assets
+Library/
+
+Library/metadata/
+
+Temp/
+
+Obj/
+
+Build/
+
+Builds/
+
+/Assets
 
 *.ai
 *.kra
