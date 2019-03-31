@@ -16,6 +16,7 @@ public class CharControl : MonoBehaviour {
 	void Start () {
 		//PowerUpDisplay("None");
 		jumpHeight = player.jumpHeight;
+		player.health = 100;
 	}
 	
 	// Update is called once per frame
@@ -49,7 +50,7 @@ public class CharControl : MonoBehaviour {
 		// if(Input.GetKey(KeyCode.Space)&&!grounded&&hasDoubleJump){
 			
 		// }
-		GameControl.instance.PlayerScore();
+		
 		
 		// if(speed<200f){
 		//  speed+=10f;
@@ -67,6 +68,11 @@ public class CharControl : MonoBehaviour {
      	if (collision.gameObject.name == "Slope"){
          	grounded = true;
      	}
+		 //moved to collectablecontrol
+        // if (collision.gameObject.CompareTag("Collectable")){
+        //     collision.gameObject.SetActive(false);
+		// 	//GameControl.instance.PlayerCoins(collision.);
+        //}
 
  	}
  
