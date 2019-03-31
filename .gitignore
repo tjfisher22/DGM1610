@@ -1,3 +1,11 @@
+
+#In Progress Art Assets
+
+
+*.ai
+*.kra
+*.kra.meta
+
 Library/
 
 Library/metadata/
@@ -68,22 +76,3 @@ sysinfo.txt
 *.unitypackage
 
 *.DS_Store
-
-#In Progress Art Assets
-Library/
-
-Library/metadata/
-
-Temp/
-
-Obj/
-
-Build/
-
-Builds/
-
-/Assets
-
-*.ai
-*.kra
-*.kra.meta
