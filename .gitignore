@@ -68,3 +68,9 @@ sysinfo.txt
 *.unitypackage
 
 *.DS_Store
+
+#In Progress Art Assets
+
+*.ai
+*.kra
+*.kra.meta
