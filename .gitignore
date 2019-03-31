@@ -5,6 +5,8 @@
 *.ai
 *.kra
 *.kra.meta
+*.ai.meta
+*.png.meta
 
 Library/
 
