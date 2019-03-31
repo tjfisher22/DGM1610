@@ -41,7 +41,7 @@ public class PlatformControl : MonoBehaviour {
 	void Update () {
 		movePlat(GetComponent<Rigidbody2D>().position, platDist, platSpeed);
 	}
-	void movePlat(Vector2 currentPos, Vector2 distance, Vector2 speed;)	{
+	void movePlat(Vector2 currentPos, Vector2 distance, Vector2 speed)	{
 		
 		
 
@@ -68,6 +68,6 @@ public class PlatformControl : MonoBehaviour {
 
 
 
-		GetComponent<Rigidbody2D>().velocity = new Vector2(xSpeed,ySpeed);
+		GetComponent<Rigidbody2D>().velocity = speed;
 	}
 }
