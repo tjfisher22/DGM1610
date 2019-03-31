@@ -9,6 +9,8 @@ public class Player : ScriptableObject {
 	public int strength;
 	public int jumpHeight;
 
+	public int numArrows;
+
 	public float speed;
 
 	public Sprite charSprite;
