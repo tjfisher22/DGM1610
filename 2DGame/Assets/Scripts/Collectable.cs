@@ -11,8 +11,6 @@ public abstract class Collectable : ScriptableObject {
 	public int cValue;
 	public CollectableType cType;
 
-	public Rigidbody2D CollectableBody;
-
 	//public Arrow arrow;
 
 	public enum ArrowType {Normal, Ice, Fire, Null};

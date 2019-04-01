@@ -5,8 +5,6 @@ using UnityEngine;
 public class CollectableControl : MonoBehaviour {
 	public Collectable pickUp;
 	int arrowUI = 0;
-
-	GameObject collectable;
 	//public Coin coin;
 	//Implement when SO are written
 	//public Arrow arrow;
@@ -44,8 +42,6 @@ public class CollectableControl : MonoBehaviour {
 
 	}
 	public void Spawn(){
-
-		pickUp.Spawn(collectable);
 		
 
 	}

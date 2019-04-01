@@ -20,16 +20,12 @@ public class Arrow : Collectable {
 		collectSprite.sprite = cSprite;
 		collectSprite.sortingOrder = 100;
 	}
-
-	//not used
-	// public void AddArrow(int amount, GameObject obj){
+	public void AddArrow(int amount, GameObject obj){
 		
 
 
-	// }
+	}
 	public override void Spawn(){
-		
-		
 	}
 
 }
