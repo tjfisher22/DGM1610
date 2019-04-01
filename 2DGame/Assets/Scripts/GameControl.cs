@@ -9,9 +9,11 @@ public class GameControl : MonoBehaviour {
 	public float scrollSpeed = -5f;
 	//public Text ScoreText;
 	public Text CoinsText;
+	public Text ArrowText;
 	public Text PowerUp;
 	//public int score = 0;
 	public int coins = 0;
+	public int arrows = 5;
 	// public int health = 100;
 	public GameObject doubleJumpPower;
 
@@ -53,8 +55,41 @@ public class GameControl : MonoBehaviour {
         coins += value;
         CoinsText.text = "Coins: " + coins.ToString();
 	}
+	public void PlayerArrows(int value, Arrow.ArrowType type, int arrowUI){
+		switch(type){
+			case Arrow.ArrowType.Normal:
+				player.numArrows[0]+=value;
+				break;
+			case Arrow.ArrowType.Ice:
+				player.numArrows[1]+=value;
+				break;
+			case Arrow.ArrowType.Fire:
+				player.numArrows[2]+=value;
+				break; 
+		}
+		//enum won't cast to int for index
+		// player.numArrows[type] += value;
+        // ArrowText.text = type.ToString() + " Arrows: " + player.numArrows[arrowUI].ToString();
+		ArrowUI(arrowUI);
+	}
 	public void SpawnPowerUp(){
 		//Instantiate(doubleJumpPower,new Vector3(10,-1,-5));
+
+	}
+
+	public void ArrowUI(int arrowUI){
+		string type = "Fire ";
+		switch(arrowUI){
+			case 0:
+				type = "";
+				break;
+			case 1: 
+				type = "Ice ";
+				break;
+			default:
+				break;
+		}
+		ArrowText.text = type + "Arrows: " + player.numArrows[arrowUI].ToString();
 
 	}
 

@@ -9,7 +9,7 @@ public class Player : ScriptableObject {
 	public int strength;
 	public int jumpHeight;
 
-	public int numArrows;
+	public int[] numArrows = new int[3];
 
 	public float speed;
 

@@ -101,7 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5efc15f523164b47bd15bd72b8c9603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 11400000, guid: 22385d13db8e9494991f0d6241f70635, type: 2}
+  coin: {fileID: 0}
+  arrow: {fileID: 0}
 --- !u!212 &212893477972901416
 SpriteRenderer:
   m_ObjectHideFlags: 1

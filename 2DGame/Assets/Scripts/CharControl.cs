@@ -17,6 +17,8 @@ public class CharControl : MonoBehaviour {
 		//PowerUpDisplay("None");
 		jumpHeight = player.jumpHeight;
 		player.health = 100;
+		for (int i = 0; i<3; i++){player.numArrows[i] = 0;}
+		GameControl.instance.ArrowUI(0);
 	}
 	
 	// Update is called once per frame

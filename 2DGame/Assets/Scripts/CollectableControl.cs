@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CollectableControl : MonoBehaviour {
-
-	public Coin coin;
+	public Collectable pickUp;
+	int arrowUI = 0;
+	//public Coin coin;
 	//Implement when SO are written
-	public Arrow arrow;
+	//public Arrow arrow;
 	// public PowerUp pUp;
 	// public Potion pot;	
 	
@@ -16,12 +17,27 @@ public class CollectableControl : MonoBehaviour {
 	void Start(){
 		Initialize();
 	}
+	void Update(){
+		if(Input.GetKeyDown(KeyCode.DownArrow)){
+			if(arrowUI>0)arrowUI--;
+			else arrowUI = 2;
+			GameControl.instance.ArrowUI(arrowUI);
+		}
+		if(Input.GetKeyDown(KeyCode.UpArrow)){
+			if(arrowUI<2)arrowUI++;
+			else arrowUI = 0;
+			GameControl.instance.ArrowUI(arrowUI);
+		}
+
+		
+	}
 
 	public void Initialize (){
 
 		//get and store a refernece to the SpriteRenderer component
 		// collectSprite = GetComponent<SpriteRenderer> ();
-		coin.Initialize(gameObject);
+		pickUp.Initialize(gameObject);
+		GameControl.instance.ArrowUI(arrowUI);
 
 
 	}
@@ -33,8 +49,18 @@ public class CollectableControl : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.CompareTag("Player")){
 			 gameObject.SetActive(false);
-			 GameControl.instance.PlayerCoins(coin.cAmount);
-			 GameControl.instance.PlayerArrows(arrow.cAmount);
+			 switch (pickUp.cType){
+				 case Collectable.CollectableType.Coin:
+				 	GameControl.instance.PlayerCoins(pickUp.cValue);
+					break;
+				case Collectable.CollectableType.Arrow:
+					GameControl.instance.PlayerArrows(pickUp.cAmount, pickUp.aType,arrowUI);
+					break;
+				default:
+					Debug.Log("Collectable has no type");
+					break;
+			 }
+
 		}
 
 	}

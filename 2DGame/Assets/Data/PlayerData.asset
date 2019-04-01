@@ -11,9 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312bb6422926ee6458fc258156cfc942, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  health: 100
+  health: 80
   strength: 20
   jumpHeight: 10
+  numArrows: 370000000000000000000000
   speed: 15
   charSprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   name: 
