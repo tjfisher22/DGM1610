@@ -25,6 +25,6 @@ public class Coin : Collectable {
 	}
 	public override void Spawn(){
 
-		//coinSpawn.Spawn;
+		Rigidbody2D coin = (Rigidbody2D) Instantiate(CollectableBody, transform.position + (transform.forward*2), transform.rotation);
 	}
 }
