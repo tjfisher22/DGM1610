@@ -10,6 +10,8 @@ public class CharControl : MonoBehaviour {
 	bool hasDoubleJump = false;
 	bool grounded;
 
+	
+
 
 	public Player player;
 	// Use this for initialization
@@ -52,7 +54,7 @@ public class CharControl : MonoBehaviour {
 		// if(Input.GetKey(KeyCode.Space)&&!grounded&&hasDoubleJump){
 			
 		// }
-		
+
 		
 		// if(speed<200f){
 		//  speed+=10f;
@@ -62,6 +64,8 @@ public class CharControl : MonoBehaviour {
 	void Jump(){
 		GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x,jumpHeight);
 	}
+
+
 	//Will this work later? As in will there be issues with it detecting other collisions. No, becasue it's only applied to the player char
 	//Like the function detects when "Playerchar" or whatever this script is assigned to collides with something
 	//When that something is slope the function runs.... I think

@@ -10,6 +10,7 @@ public class Player : ScriptableObject {
 	public int jumpHeight;
 
 	public int[] numArrows = new int[3];
+	public int selectedArrow = 0;
 
 	public float speed;
 

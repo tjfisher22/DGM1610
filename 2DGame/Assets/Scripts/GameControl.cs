@@ -90,6 +90,7 @@ public class GameControl : MonoBehaviour {
 				break;
 		}
 		ArrowText.text = type + "Arrows: " + player.numArrows[arrowUI].ToString();
+		player.selectedArrow = arrowUI;
 
 	}
 
