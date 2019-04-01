@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc113802c3f6044984e701ab5f7deeb, type: 3}
+  m_Name: Ice Arrow
+  m_EditorClassIdentifier: 
+  cName: Ice Arrow
+  cSprite: {fileID: 21300000, guid: f60b0f637d184434297c87d87b7a6fc1, type: 3}
+  cAmount: 3
+  cValue: 0
+  cType: 1
+  aType: 1

@@ -14,7 +14,7 @@ MonoBehaviour:
   health: 80
   strength: 20
   jumpHeight: 10
-  numArrows: 370000000000000000000000
+  numArrows: 010000000500000015000000
   speed: 15
   charSprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   name: 
