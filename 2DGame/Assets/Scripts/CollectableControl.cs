@@ -20,6 +20,8 @@ public class CollectableControl : MonoBehaviour {
 		Initialize();
 	}
 	void Update(){
+
+		//move to player UI
 		if(Input.GetKeyDown(KeyCode.DownArrow)){
 			if(arrowUI>0)arrowUI--;
 			else arrowUI = 2;
