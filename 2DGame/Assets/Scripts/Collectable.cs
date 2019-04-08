@@ -15,9 +15,9 @@ public abstract class Collectable : ScriptableObject {
 
 	//public Arrow arrow;
 
-	// public enum ArrowType {Normal, Ice, Fire, Null};
+	public enum ArrowType {Normal, Ice, Fire, Null};
 
-	// public ArrowType aType = ArrowType.Null;
+	public ArrowType aType = ArrowType.Null;
 
 	public abstract void Initialize(GameObject obj);
 	public abstract void Spawn();

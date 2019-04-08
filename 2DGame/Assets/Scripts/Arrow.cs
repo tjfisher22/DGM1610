@@ -6,9 +6,9 @@ using UnityEngine;
 public class Arrow : Collectable {
 
 	//not working here when tryying to pass parent class
-	public enum ArrowType {Normal, Ice, Fire};
+	// public enum ArrowType {Normal, Ice, Fire};
 
-	public ArrowType aType = ArrowType.Normal;
+	// public ArrowType aType = ArrowType.Normal;
 	private SpriteRenderer collectSprite;
 
 	//private CollectableControl coinSpawn;
