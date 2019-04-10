@@ -6,6 +6,7 @@ using UnityEngine;
 public class Coin : Collectable {
 
 	public Color coinColor = Color.black;
+	public int coValue;
 	//public Sprite cSprite;
 
 	private SpriteRenderer collectSprite;
@@ -25,6 +26,6 @@ public class Coin : Collectable {
 	}
 	public override void Spawn(){
 
-		//coinSpawn.Spawn;
+		//Rigidbody2D coin = (Rigidbody2D) Instantiate(CollectableBody, transform.position + (transform.forward*2), transform.rotation);
 	}
 }

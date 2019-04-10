@@ -3,13 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CollectableControl : MonoBehaviour {
-	public Collectable pickUp;
+	
 	int arrowUI = 0;
-	//public Coin coin;
+
+
+	//This one is needed for easier referencing
+	public Collectable pickUp;
+	//These are needed for the specific send functions
+	//If there is a way to reference the children of pickUp let me know
+	//As in I can access all the variables declared in pickUP but can't get the chilren values
+	//I could merge the classes but that's against SRP right? It'll make code management harder
+	public Coin coin;
+	public Arrow arrow;
 	//Implement when SO are written
-	//public Arrow arrow;
-	// public PowerUp pUp;
-	// public Potion pot;	
+	
+	//public PowerUp pUp;
+	//public Potion pot;	
 	
 	//[HideInInspector]
 	//public SpriteRenderer collectSprite;
@@ -51,10 +60,10 @@ public class CollectableControl : MonoBehaviour {
 			 gameObject.SetActive(false);
 			 switch (pickUp.cType){
 				 case Collectable.CollectableType.Coin:
-				 	GameControl.instance.PlayerCoins(pickUp.cValue);
+				 	GameControl.instance.PlayerCoins(coin.coValue);
 					break;
 				case Collectable.CollectableType.Arrow:
-					GameControl.instance.PlayerArrows(pickUp.cAmount, pickUp.aType,arrowUI);
+					GameControl.instance.PlayerArrows(pickUp.cAmount,arrow.aType,arrowUI);
 					break;
 				default:
 					Debug.Log("Collectable has no type");
