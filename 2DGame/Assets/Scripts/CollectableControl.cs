@@ -7,7 +7,8 @@ public class CollectableControl : MonoBehaviour {
 	int arrowUI = 0;
 
 
-	//This one is needed for easier referencing
+	//This one is needed for easier referencing when it's generic
+	//The prefab will just have the same SO twice.3
 	public Collectable pickUp;
 	//These are needed for the specific send functions
 	//If there is a way to reference the children of pickUp let me know
@@ -56,6 +57,8 @@ public class CollectableControl : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
+		//I should move the destroy functions to the individual classes, but will
+		//that work since they are scriptable objects?
 		if (other.gameObject.CompareTag("Player")){
 			 gameObject.SetActive(false);
 			 switch (pickUp.cType){

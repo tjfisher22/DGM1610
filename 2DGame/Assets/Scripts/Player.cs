@@ -9,6 +9,7 @@ public class Player : ScriptableObject {
 	public int strength;
 	public int jumpHeight;
 
+//give to inventory so?
 	public int[] numArrows = new int[3];
 	public int selectedArrow = 0;
 
